@@ -1,0 +1,75 @@
+@import "./resets";
+body {
+  margin: 0;
+}
+body,
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: max-content;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  color: rgb(39, 39, 39);
+  background: white;
+  text-align: center;
+  // padding: 3rem 0;
+  min-height: 100vh;
+  main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    margin-top: 10vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0;
+  }
+
+  .wallets_wrap {
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+    .wallet {
+      width: 31%;
+      @include flex(row, flex-start, center);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background-color: rgb(39, 39, 39);
+      color: white;
+      border: 1px solid rgb(39, 39, 39);
+      margin: 0.5rem 1%;
+      h2 {
+        font-weight: 400;
+        pointer-events: none;
+      }
+      img.icon {
+        pointer-events: none;
+        width: 45px;
+        height: 45px;
+        margin-right: 2rem;
+      }
+      @include media-md {
+        width: 48%;
+      }
+      @include media-sm {
+        width: 100%;
+      }
+    }
+    @include media-md {
+      margin: 2rem 0;
+    }
+  }
+}

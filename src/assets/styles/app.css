@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: -webkit-max-content;
+  height: max-content;
+}
+
+::-moz-placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+:-ms-input-placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: max-content;
+}
+
+::-ms-input-placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: max-content;
+}
+
+body,
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  color: #272727;
+  background: white;
+  text-align: center;
+  min-height: 100vh;
+}
+.App main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  margin-top: 10vh;
+}
+.App h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.App p {
+  margin: 1rem 0;
+}
+.App .wallets_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.App .wallets_wrap .wallet {
+  width: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #272727;
+  color: white;
+  border: 1px solid #272727;
+  margin: 0.5rem 1%;
+}
+.App .wallets_wrap .wallet h2 {
+  font-weight: 400;
+  pointer-events: none;
+}
+.App .wallets_wrap .wallet img.icon {
+  pointer-events: none;
+  width: 45px;
+  height: 45px;
+  margin-right: 2rem;
+}
+
+.App img.icon {
+  pointer-events: none;
+  width: 45px;
+  height: 45px;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .App .wallets_wrap .wallet {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .App .wallets_wrap .wallet {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .App .wallets_wrap {
+    margin: 2rem 0;
+  }
+}
